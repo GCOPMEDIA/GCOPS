@@ -5,32 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Uni_USSD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Uni_USSD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L 1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/GCOPS/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/mtn_auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_APP/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_ID/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_ID/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_ID/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_ID/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/USSD_ID/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asserts/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asserts/hobbies.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asserts/images/my pic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/GCOPS/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gcops/src/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +41,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2vUd3SvGZuymZC3CCN2dBOdj1V9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\OneDrive\Desktop\GCOPS\backend\GCOPS\GCOPS_" />
