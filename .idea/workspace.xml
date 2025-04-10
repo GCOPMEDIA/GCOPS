@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/DCOPS_/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/GCOPS/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/GCOPS/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gcops/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCOPS_/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DCOPS_/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GCOPS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/GCOPS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/componets/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/componets/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
