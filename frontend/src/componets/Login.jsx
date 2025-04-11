@@ -45,7 +45,7 @@ function Login() {
             <Header text='Stuff Login' />
             <p>Login to your account</p>
             <form method="POST" onSubmit={onDone}>
-                <Input id="username" label="Username" type="text" name="username" placeholder="Enter your username" required={true}  onChange={handleChange} />
+            <Input id="username" label="Username" type="text" name="username" placeholder="Enter your username" required={true}  onChange={handleChange} />
                 <Input id="password" label="Password" type="password" name="password" placeholder="Enter your password" required={true} onChange={handleChange}/>
                 <button type="submit" >Login</button>
             </form>
