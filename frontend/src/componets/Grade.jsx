@@ -60,3 +60,4 @@ function Grade(){
 }
 
 export default Grade;
+export { Subject };
