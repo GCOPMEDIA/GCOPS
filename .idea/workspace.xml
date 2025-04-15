@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="start">
+    <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="setup underway">
+      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/grade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mainApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mainApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,18 +37,24 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2vUd3SvGZuymZC3CCN2dBOdj1V9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\OneDrive\Desktop\GCOPS\app\mainApp\templates\registration" />
       <recent name="C:\Users\USER\OneDrive\Desktop\GCOPS\backend\GCOPS\GCOPS_" />
       <recent name="C:\Users\USER\OneDrive\Desktop\GCOPS\backend\GCOPS" />
     </key>
@@ -58,46 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00001" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745295687</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745295687</updated>
-    </task>
-    <task id="LOCAL-00002" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745299019</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745299019</updated>
-    </task>
-    <task id="LOCAL-00003" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745302322</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745302322</updated>
-    </task>
-    <task id="LOCAL-00004" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745307453</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745307453</updated>
-    </task>
-    <task id="LOCAL-00005" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745312489</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745312489</updated>
     </task>
     <task id="LOCAL-00006" summary="restart">
       <option name="closed" value="true" />
@@ -451,12 +427,53 @@
       <option name="project" value="LOCAL" />
       <updated>1744745653079</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744747394933</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1744747394934</updated>
+    </task>
+    <task id="LOCAL-00051" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744747400959</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1744747400959</updated>
+    </task>
+    <task id="LOCAL-00052" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744747405879</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1744747405879</updated>
+    </task>
+    <task id="LOCAL-00053" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744747412108</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1744747412108</updated>
+    </task>
+    <task id="LOCAL-00054" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744747418381</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1744747418381</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="restart" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="setup underway" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup underway" />
   </component>
 </project>
