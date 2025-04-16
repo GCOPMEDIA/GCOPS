@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login
 from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponse
 from .models import *
+from .utils import download
 # Create your views here.
 
 def login_(request):
@@ -164,8 +165,13 @@ def edit_single_grade(request, grade_id):
         return redirect('view_grade', student_id=grade.student.student_id)
 
     return render(request, 'edit_grade.html', {'grade': grade})
-def download_grade_pdf(request):
-    return HttpResponse(status=200)
+def download_grade_pdf(request,student_id):
+    output_path = download(student_id)
+    with open(output_path, 'rb') as pdf_file:
+        response = HttpResponse(pdf_file.read(), content_type='application/pdf')
+        response['Content-Disposition'] = f'attachment; filename="member_{student_id}.pdf"'
+        return response
+
 
 
 
