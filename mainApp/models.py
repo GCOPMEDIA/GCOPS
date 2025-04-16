@@ -165,12 +165,19 @@ class Student(models.Model):
 
 
 class Subject(models.Model):
+    LEVEL_CHOICES = [
+        ('nursery', 'Nursery'),
+        ('primary', 'Primary'),
+    ]
+
     subject_id = models.AutoField(primary_key=True)
     subject_name = models.CharField(max_length=250)
+    level = models.CharField(max_length=20, choices=LEVEL_CHOICES)
 
     class Meta:
         managed = True
         db_table = 'subject'
+
 
 
 class Term(models.Model):
