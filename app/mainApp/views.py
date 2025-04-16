@@ -34,6 +34,8 @@ def add_student(request):
     return render(request,"student.html")
 
 def class_view(request):
-    return render(request,'class.html')
+    print(request.user)
+    return render(request, 'class.html', {'user': request.user})
+
 
 
