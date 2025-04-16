@@ -11,6 +11,7 @@ urlpatterns = [
     path('add-grade/<int:student_id>/', add_grade, name='add_grade'),
     path('view_grade/<int:student_id>/',view_grade,name='view_grade'),
 path('edit-grade/<int:grade_id>/', edit_single_grade, name='edit_single_grade'),
+    path('download-pdf/<int:student_id>/',download_grade_pdf,name='download_grade_pdf'),
 
 
 
