@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Students</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgba(102, 51, 153, 0.7); /* Rebeccapurple overlay */
+            padding: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        h3 {
+            color: rebeccapurple;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rebeccapurple;
+            padding-bottom: 5px;
+        }
+        .student-list {
+            list-style: none;
+            padding: 0;
+        }
+        .student-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e6dcf3;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+        }
+        .student-name {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .grade-btn {
+            padding: 8px 16px;
+            background-color: #5e3c94;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        .grade-btn:hover {
+            background-color: #472d71;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Students in Your Class</h2>
+
+        <h3>🟣 Students to be Graded</h3>
+        <ul class="student-list">
+            {% for student in students %}
+                {% if not student.graded %}
+                    <li class="student-item">
+                        <span class="student-name">{{ student.student_f_name }} {{ student.student_l_name }}</span>
+                        <a href="{% url 'add_grade' student.student_id %}" class="grade-btn">➕ Add Grade</a>
+                    </li>
+                {% endif %}
+            {% empty %}
+                <li>No students found.</li>
+            {% endfor %}
+        </ul>
+
+        <h3>✅ Graded Students</h3>
+        <ul class="student-list">
+            {% for student in students %}
+                {% if student.graded %}
+                    <li class="student-item">
+                        <span class="student-name">{{ student.student_f_name }} {{ student.student_l_name }}</span>
+<a href="{% url 'view_grade' student.student_id %}" class="grade-btn">📄 View Grade</a>                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
