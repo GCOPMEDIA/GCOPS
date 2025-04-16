@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="setup underway">
-      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/grade.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mainApp/templates/teacher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mainApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mainApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/class.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/templates/class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/templates/teacher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,14 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\OneDrive\Desktop\GCOPS\app\mainApp\templates\registration" />
@@ -74,86 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00006" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745317866</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745317866</updated>
-    </task>
-    <task id="LOCAL-00007" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745322582</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745322582</updated>
-    </task>
-    <task id="LOCAL-00008" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745327280</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745327280</updated>
-    </task>
-    <task id="LOCAL-00009" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745332247</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745332247</updated>
-    </task>
-    <task id="LOCAL-00010" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745337432</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745337432</updated>
-    </task>
-    <task id="LOCAL-00011" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745343171</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745343171</updated>
-    </task>
-    <task id="LOCAL-00012" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745346955</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745346955</updated>
-    </task>
-    <task id="LOCAL-00013" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745351071</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745351071</updated>
-    </task>
-    <task id="LOCAL-00014" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745355402</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745355402</updated>
-    </task>
-    <task id="LOCAL-00015" summary="restart">
-      <option name="closed" value="true" />
-      <created>1744745359747</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745359747</updated>
     </task>
     <task id="LOCAL-00016" summary="restart">
       <option name="closed" value="true" />
@@ -467,7 +386,87 @@
       <option name="project" value="LOCAL" />
       <updated>1744747418381</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752732379</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752732379</updated>
+    </task>
+    <task id="LOCAL-00056" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752739724</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752739724</updated>
+    </task>
+    <task id="LOCAL-00057" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752746339</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752746339</updated>
+    </task>
+    <task id="LOCAL-00058" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752753468</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752753468</updated>
+    </task>
+    <task id="LOCAL-00059" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752760719</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752760719</updated>
+    </task>
+    <task id="LOCAL-00060" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752768265</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752768265</updated>
+    </task>
+    <task id="LOCAL-00061" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752774827</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752774827</updated>
+    </task>
+    <task id="LOCAL-00062" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752781722</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752781722</updated>
+    </task>
+    <task id="LOCAL-00063" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752789350</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752789350</updated>
+    </task>
+    <task id="LOCAL-00064" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744752795208</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1744752795208</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
