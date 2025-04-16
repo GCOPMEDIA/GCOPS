@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Grade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ece6f8;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f3eaff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: rebeccapurple;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #e0d1f7;
+        }
+        button {
+            margin-top: 25px;
+            background-color: rebeccapurple;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: indigo;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Edit Grade for {{ grade.subject.subject_name }}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="class_mark">Class Mark</label>
+        <input type="number" name="class_mark" id="class_mark" value="{{ grade.class_mark }}" min="0" max="99" required>
+
+        <label for="exams_mark">Exams Mark</label>
+        <input type="number" name="exams_mark" id="exams_mark" value="{{ grade.exams_mark }}" min="0" max="99" required>
+
+        <button type="submit">Update Grade</button>
+    </form>
+</div>
+</body>
+</html>
