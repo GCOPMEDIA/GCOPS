@@ -5,13 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="setup underway">
-      <change afterPath="$PROJECT_DIR$/app/mainApp/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mainApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mainApp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mainApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/migrations/0002_student_graded_term_term_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/done_registering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/edit_grade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/grade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/registration/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/student.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/teacher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/templates/view_grade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mainApp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/manage.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +61,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.tests.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\OneDrive\Desktop\GCOPS\app\mainApp\templates\registration" />
@@ -71,62 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00046" summary="start">
-      <option name="closed" value="true" />
-      <created>1744745641915</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745641915</updated>
-    </task>
-    <task id="LOCAL-00047" summary="start">
-      <option name="closed" value="true" />
-      <created>1744745646132</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745646132</updated>
-    </task>
-    <task id="LOCAL-00048" summary="start">
-      <option name="closed" value="true" />
-      <created>1744745649400</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745649400</updated>
-    </task>
-    <task id="LOCAL-00049" summary="start">
-      <option name="closed" value="true" />
-      <created>1744745653079</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1744745653079</updated>
-    </task>
-    <task id="LOCAL-00050" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744747394933</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1744747394934</updated>
-    </task>
-    <task id="LOCAL-00051" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744747400959</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1744747400959</updated>
-    </task>
-    <task id="LOCAL-00052" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744747405879</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1744747405879</updated>
     </task>
     <task id="LOCAL-00053" summary="setup underway">
       <option name="closed" value="true" />
@@ -464,7 +429,63 @@
       <option name="project" value="LOCAL" />
       <updated>1744808335370</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822445648</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822445649</updated>
+    </task>
+    <task id="LOCAL-00096" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822449485</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822449485</updated>
+    </task>
+    <task id="LOCAL-00097" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822453595</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822453595</updated>
+    </task>
+    <task id="LOCAL-00098" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822457894</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822457894</updated>
+    </task>
+    <task id="LOCAL-00099" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822461218</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822461218</updated>
+    </task>
+    <task id="LOCAL-00100" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822465301</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822465301</updated>
+    </task>
+    <task id="LOCAL-00101" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744822473795</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1744822473795</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
