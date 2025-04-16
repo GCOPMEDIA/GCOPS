@@ -10,10 +10,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
-    # Add custom fields here if needed
-
-
-
+# Add custom fields here if needed
 
 
 class AuthGroup(models.Model):
@@ -46,8 +43,6 @@ class AuthPermission(models.Model):
 
 
 class AuthUser(AbstractUser):
-
-    class_name = models.CharField(max_length=250,blank=True, null=True)
 
     class Meta:
         managed = True
@@ -127,13 +122,16 @@ class Grade(models.Model):
     student = models.ForeignKey('Student', models.DO_NOTHING)
     subject = models.ForeignKey('Subject', models.DO_NOTHING)
 
+
     class Meta:
         managed = True
         db_table = 'grade'
 
+
 class ClassName(models.Model):
     class_id = models.AutoField(primary_key=True)
     class_name = models.CharField(max_length=250)
+    teacher = models.ForeignKey(AuthUser,models.DO_NOTHING)
 
     class Meta:
         managed = True
@@ -144,11 +142,12 @@ class Student(models.Model):
     student_id = models.AutoField(primary_key=True)
     student_f_name = models.CharField(max_length=250)
     student_l_name = models.CharField(max_length=250)
-    class_name = models.CharField(max_length=250)
+    class_name = models.ForeignKey(ClassName,on_delete=models.DO_NOTHING)
     conduct = models.CharField(max_length=450, blank=True, null=True)
     remarks = models.CharField(max_length=450, blank=True, null=True)
     attendance = models.CharField(max_length=250, blank=True, null=True)
     interest = models.CharField(max_length=250, blank=True, null=True)
+    graded = models.BooleanField(blank=True, null=True)
 
     class Meta:
         managed = True
@@ -164,11 +163,9 @@ class Subject(models.Model):
         db_table = 'subject'
 
 
-
-
-
 class Term(models.Model):
     term_id = models.AutoField(primary_key=True)
+    term_type = models.CharField(max_length=250)
     begin_date = models.DateField(max_length=250)
     vacation_date = models.DateField(max_length=250)
     reopen_date = models.DateField(max_length=250)
