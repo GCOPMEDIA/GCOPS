@@ -151,8 +151,8 @@
 <body>
     <div class="login-container">
         <div class="login-box">
-            <h2>Welcome </h2>
-            <p>Please log in to your account</p>
+            <h2>Student Registration </h2>
+            <p>Please provide student details</p>
             <form method="POST" action="{% url 'add_student' %}">
                 {% csrf_token %}
                 <div class="input-group">
@@ -160,13 +160,20 @@
                     <input id="studentFName" type="text" name="studentFName" placeholder="Enter Student First Name" required>
                 </div>
                 <div class="input-group">
-                    <label for="studentLName">Student First Name:</label>
-                    <input id="studentLName" type="text" name="studentLName" placeholder="Enter Student First Name" required>
+                    <label for="studentLName">Student Other Name(s):</label>
+                    <input id="studentLName" type="text" name="studentLName" placeholder="Enter Student Other Name(s)" required>
                 </div>
                 <div class="input-group">
-                    <label for="class">Class:</label>
-                    <input id="class" type="text" name="class" placeholder="Class" required>
-                </div>
+    <label for="class">Class:</label>
+    <select id="class" name="class" required>
+        <option value="">-- Select Class --</option>
+        {% for class in classes %}
+            <option value="{{ class.class_id }}">{{ class.class_name }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+
 
                     <input type="hidden" name="next" value="{{ next }}">
 
