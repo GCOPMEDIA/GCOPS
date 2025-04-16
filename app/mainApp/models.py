@@ -6,6 +6,14 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
+# mainApp/models.py
+from django.contrib.auth.models import AbstractUser
+
+
+    # Add custom fields here if needed
+
+
+
 
 
 class AuthGroup(models.Model):
@@ -37,21 +45,13 @@ class AuthPermission(models.Model):
         unique_together = (('content_type', 'codename'),)
 
 
-class AuthUser(models.Model):
-    password = models.CharField(max_length=128)
-    last_login = models.DateTimeField(blank=True, null=True)
-    is_superuser = models.BooleanField()
-    username = models.CharField(unique=True, max_length=150)
-    last_name = models.CharField(max_length=150)
-    email = models.CharField(max_length=254)
-    is_staff = models.BooleanField()
-    is_active = models.BooleanField()
-    date_joined = models.DateTimeField()
-    first_name = models.CharField(max_length=150)
+class AuthUser(AbstractUser):
+
+    class_name = models.CharField(max_length=250,blank=True, null=True)
 
     class Meta:
         managed = True
-        db_table = 'teachers'
+        db_table = 'Teachers'
 
 
 class AuthUserGroups(models.Model):
@@ -118,31 +118,41 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
+class Grade(models.Model):
+    grade_id = models.AutoField(primary_key=True)
+    class_mark = models.CharField(max_length=250)
+    exams_mark = models.CharField(max_length=250)
+    total_mark = models.CharField(max_length=250)
+    remarks = models.CharField(max_length=250)
+    student = models.ForeignKey('Student', models.DO_NOTHING)
+    subject = models.ForeignKey('Subject', models.DO_NOTHING)
+
+    class Meta:
+        managed = True
+        db_table = 'grade'
+
+class ClassName(models.Model):
+    class_id = models.AutoField(primary_key=True)
+    class_name = models.CharField(max_length=250)
+
+    class Meta:
+        managed = True
+        db_table = 'Class'
+
+
 class Student(models.Model):
     student_id = models.AutoField(primary_key=True)
     student_f_name = models.CharField(max_length=250)
     student_l_name = models.CharField(max_length=250)
     class_name = models.CharField(max_length=250)
-    conduct = models.CharField(max_length=450,null=True,blank=True)
-    remarks = models.CharField(max_length=450,null=True,blank=True)
-    attendance = models.CharField(max_length=250,null=True,blank=True)
-    interest = models.CharField(max_length=250,null=True,blank=True)
+    conduct = models.CharField(max_length=450, blank=True, null=True)
+    remarks = models.CharField(max_length=450, blank=True, null=True)
+    attendance = models.CharField(max_length=250, blank=True, null=True)
+    interest = models.CharField(max_length=250, blank=True, null=True)
 
     class Meta:
         managed = True
         db_table = 'student'
-
-
-class Term(models.Model):
-    term_id = models.AutoField(primary_key=True)
-    begin_date = models.CharField(max_length=250)
-    vacation_date = models.CharField(max_length=250)
-    reopen_date = models.CharField(max_length=250)
-    total_attendance = models.IntegerField()
-
-    class Meta:
-        managed = True
-        db_table = 'term'
 
 
 class Subject(models.Model):
@@ -154,15 +164,16 @@ class Subject(models.Model):
         db_table = 'subject'
 
 
-class Grade(models.Model):
-    grade_id = models.AutoField(primary_key=True)
-    subject = models.ForeignKey(Subject,on_delete=models.CASCADE)
-    class_mark = models.CharField(max_length=250)
-    exams_mark = models.CharField(max_length=250)
-    total_mark = models.CharField(max_length=250)
-    remarks = models.CharField(max_length=250)
-    student = models.ForeignKey(Student,on_delete=models.CASCADE)
+
+
+
+class Term(models.Model):
+    term_id = models.AutoField(primary_key=True)
+    begin_date = models.DateField(max_length=250)
+    vacation_date = models.DateField(max_length=250)
+    reopen_date = models.DateField(max_length=250)
+    total_attendance = models.IntegerField()
 
     class Meta:
         managed = True
-        db_table = 'grade'
+        db_table = 'term'
