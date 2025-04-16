@@ -106,7 +106,9 @@
 <body>
     <div class="login-container">
         <h2>Teacher View</h2>
-        <button type="button" >View Class</button>
+<!--        <button type="button" ></button>-->
+        <a href="{% url 'class_view' %}" class="btn">View Class </a>
+
 <!--        <button type="button" ></button>-->
         <a href="{% url 'add_student' %}" class="btn">Add Student </a>
     </div>
