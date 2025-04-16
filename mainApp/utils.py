@@ -6,6 +6,20 @@ def safe_text(text):
                 .replace("“", '"')
                 .replace("”", '"')
                 .replace("…", "..."))
+from datetime import datetime
+
+def get_date_in_words(date_obj):
+    day = date_obj.day
+    month = date_obj.strftime('%B')  # e.g. April
+    year = date_obj.year
+
+    # Convert day to ordinal (1st, 2nd, 3rd...)
+    if 4 <= day <= 20 or 24 <= day <= 30:
+        suffix = "th"
+    else:
+        suffix = ["st", "nd", "rd"][day % 10 - 1]
+
+    return f"{day}{suffix} {month} {year}"
 
 
 def download(student_id):
@@ -73,7 +87,7 @@ def download(student_id):
     pdf.cell(30, 8, f"{term.term_type}", ln=0)
 
     pdf.set_text_color(0, 0, 102)
-    pdf.cell(50, 8, "POSITION IN CLASS:", ln=0)
+    pdf.cell(48, 8, "POSITION IN CLASS:", ln=0)
     pdf.set_text_color(0, 204, 255)
     pdf.cell(0, 8, "1st", ln=1)
 
@@ -85,12 +99,12 @@ def download(student_id):
     pdf.set_text_color(0, 0, 102)
     pdf.cell(25, 8, "VACATION:", ln=0)
     pdf.set_text_color(0, 204, 255)
-    pdf.cell(52, 8, f"{term.vacation_date}", ln=0)
+    pdf.cell(52, 8, f"{get_date_in_words(term.vacation_date)}", ln=0)
 
     pdf.set_text_color(0, 0, 102)
     pdf.cell(30, 8, "RE-OPENING:", ln=0)
     pdf.set_text_color(0, 204, 255)
-    pdf.cell(30, 8, f"{term.reopen_date}", ln=1)
+    pdf.cell(30, 8, f"{get_date_in_words(term.reopen_date)}", ln=1)
 
     pdf.set_text_color(0, 0, 0)
     pdf.ln(5)
