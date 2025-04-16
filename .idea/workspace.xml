@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="setup underway">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,38 +65,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00058" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744752753468</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1744752753468</updated>
-    </task>
-    <task id="LOCAL-00059" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744752760719</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1744752760719</updated>
-    </task>
-    <task id="LOCAL-00060" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744752768265</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1744752768265</updated>
-    </task>
-    <task id="LOCAL-00061" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744752774827</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1744752774827</updated>
     </task>
     <task id="LOCAL-00062" summary="setup underway">
       <option name="closed" value="true" />
@@ -459,7 +426,39 @@
       <option name="project" value="LOCAL" />
       <updated>1744827132741</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744827538661</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1744827538661</updated>
+    </task>
+    <task id="LOCAL-00108" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744827541484</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1744827541484</updated>
+    </task>
+    <task id="LOCAL-00109" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744827548041</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1744827548041</updated>
+    </task>
+    <task id="LOCAL-00110" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1744827822742</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1744827822742</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
