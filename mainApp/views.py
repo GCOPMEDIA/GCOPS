@@ -3,6 +3,7 @@ from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponse
 from .models import *
 from .utils import download
+from django.contrib import messages
 # Create your views here.
 
 def login_(request):
@@ -45,8 +46,13 @@ def add_student(request):
     return render(request,"student.html",{"classes":classes})
 
 def class_view(request):
-    class_= ClassName.objects.get(teacher=request.user.id)
-    students = Student.objects.filter(class_name=class_)
+    try:
+        class_= ClassName.objects.get(teacher=request.user.id)
+        students = Student.objects.filter(class_name=class_)
+        print(class_)
+    except:
+        messages.error(request, "No class has been assigned to you contact your admin")
+        return redirect('teacher_view')
 
     return render(request, 'class.html', {'students': students})
 
