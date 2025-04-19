@@ -88,6 +88,11 @@
                 {% endif %}
             {% endfor %}
         </ul>
+        {% if admin_view %}
+        <div>
+            <a href="{% url 'add_student' %}" class="btn grade-btn">Add Student </a>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>
