@@ -167,6 +167,7 @@ class Student(models.Model):
 class Subject(models.Model):
     LEVEL_CHOICES = [
         ('nursery', 'Nursery'),
+        ('kindergarten',"Kindergarten"),
         ('primary', 'Primary'),
     ]
 
