@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from .models import *
 from .utils import download
 from django.contrib import messages
+
+
 # Create your views here.
 
 def login_(request):
@@ -17,6 +19,8 @@ def login_(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
+            if user.is_superuser:
+                return redirect('allClasses')
             return redirect(next_url) if next_url else redirect('teacher_view')  # Redirect to next URL or default
         else:
             return HttpResponse(status=403)  # Or render with an error message
@@ -24,11 +28,13 @@ def login_(request):
     next_url = request.GET.get('next', '')  # Preserve 'next' parameter for redirection
     return render(request, 'registration/login.html', {'next': next_url})
 
+
 def teacher_view(request):
-    return render(request,'teacher.html')
+    return render(request, 'teacher.html')
+
 
 def add_student(request):
-    classes =  ClassName.objects.all()
+    classes = ClassName.objects.all()
     if request.method == "POST":
         f_name = request.POST.get('studentFName')
         l_name = request.POST.get('studentLName')
@@ -43,25 +49,25 @@ def add_student(request):
             "class_name": selected_class.class_name
         })
 
-    return render(request,"student.html",{"classes":classes})
+    return render(request, "student.html", {"classes": classes})
+
 
 def class_view(request):
     try:
-        class_= ClassName.objects.get(teacher=request.user.id)
+        class_ = ClassName.objects.get(teacher=request.user.id)
         students = Student.objects.filter(class_name=class_)
-        print(class_)
     except:
         messages.error(request, "No class has been assigned to you contact your admin")
         return redirect('teacher_view')
 
     return render(request, 'class.html', {'students': students})
 
-
     # Add grade logic goes here...
 
 
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Student, Subject, Grade
+
 
 def add_grade(request, student_id):
     student = get_object_or_404(Student, student_id=student_id)
@@ -119,6 +125,8 @@ def add_grade(request, student_id):
         return redirect("class_view")  # or wherever you want to redirect
 
     return render(request, 'grade.html', {'student': student, 'subjects': subjects})
+
+
 def view_grade(request, student_id):
     student = get_object_or_404(Student, student_id=student_id)
     grades = Grade.objects.filter(student=student).select_related('subject')
@@ -128,8 +136,10 @@ def view_grade(request, student_id):
         'grades': grades
     })
 
+
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Grade
+
 
 def edit_single_grade(request, grade_id):
     grade = get_object_or_404(Grade, grade_id=grade_id)
@@ -171,13 +181,23 @@ def edit_single_grade(request, grade_id):
         return redirect('view_grade', student_id=grade.student.student_id)
 
     return render(request, 'edit_grade.html', {'grade': grade})
-def download_grade_pdf(request,student_id):
+
+
+def download_grade_pdf(request, student_id):
     output_path = download(student_id)
     with open(output_path, 'rb') as pdf_file:
         response = HttpResponse(pdf_file.read(), content_type='application/pdf')
-        response['Content-Disposition'] = f'attachment; filename="member_{student_id}.pdf"'
+        response['Content-Disposition'] = f'attachment; filename="student_{student_id}.pdf"'
         return response
 
 
+def allClasses(request):
+    class_ = ClassName.objects.all()
+    return render(request, 'allClasses.html',{"classes":class_})
 
+def classView(request,class_id):
+    class_ = ClassName.objects.get(class_id=class_id)
+    students = Student.objects.filter(class_name=class_)
+
+    return render(request, 'class.html', {'students': students})
 
