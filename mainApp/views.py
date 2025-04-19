@@ -199,5 +199,5 @@ def classView(request,class_id):
     class_ = ClassName.objects.get(class_id=class_id)
     students = Student.objects.filter(class_name=class_)
 
-    return render(request, 'class.html', {'students': students})
+    return render(request, 'class.html', {'students': students,"admin_view":True})
 
