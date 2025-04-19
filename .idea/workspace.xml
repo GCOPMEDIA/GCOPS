@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="setup underway">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainApp/templates/class.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/templates/class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainApp/templates/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/templates/student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,38 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00088" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744808288559</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1744808288559</updated>
-    </task>
-    <task id="LOCAL-00089" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744808293903</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1744808293903</updated>
-    </task>
-    <task id="LOCAL-00090" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744808300421</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1744808300421</updated>
-    </task>
-    <task id="LOCAL-00091" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744808306218</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1744808306218</updated>
     </task>
     <task id="LOCAL-00092" summary="setup underway">
       <option name="closed" value="true" />
@@ -461,7 +427,39 @@
       <option name="project" value="LOCAL" />
       <updated>1745104621011</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1745105063847</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1745105063847</updated>
+    </task>
+    <task id="LOCAL-00138" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1745105068568</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1745105068568</updated>
+    </task>
+    <task id="LOCAL-00139" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1745105073550</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1745105073550</updated>
+    </task>
+    <task id="LOCAL-00140" summary="setup underway">
+      <option name="closed" value="true" />
+      <created>1745105081292</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1745105081292</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
