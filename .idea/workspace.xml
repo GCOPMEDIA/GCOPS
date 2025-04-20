@@ -68,22 +68,6 @@
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
     </task>
-    <task id="LOCAL-00105" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744827026700</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1744827026700</updated>
-    </task>
-    <task id="LOCAL-00106" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744827132741</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1744827132741</updated>
-    </task>
     <task id="LOCAL-00107" summary="setup underway">
       <option name="closed" value="true" />
       <created>1744827538661</created>
@@ -460,7 +444,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745184802143</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745185722996</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1745185722996</updated>
+    </task>
+    <task id="LOCAL-00155" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745185725797</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1745185725797</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
