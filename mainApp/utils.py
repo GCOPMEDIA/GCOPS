@@ -160,7 +160,7 @@ def download(student_id):
     # === SUBJECT TABLE ===
     # Table header
     pdf.set_font("Arial", "B", 12)
-    pdf.set_text_color(0, 0, )
+    pdf.set_text_color(0, 0, 0)
     pdf.set_fill_color(255, 255, 255)
 
     # Add line breaks for multi-word headers
