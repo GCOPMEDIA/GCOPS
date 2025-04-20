@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="levels separations">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainApp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,22 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00103" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744826986527</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1744826986527</updated>
-    </task>
-    <task id="LOCAL-00104" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744827019715</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1744827019715</updated>
     </task>
     <task id="LOCAL-00105" summary="setup underway">
       <option name="closed" value="true" />
@@ -458,7 +444,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745184126327</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745184798194</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1745184798194</updated>
+    </task>
+    <task id="LOCAL-00153" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745184802143</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1745184802143</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
