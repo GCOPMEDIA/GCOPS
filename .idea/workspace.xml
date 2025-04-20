@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="setup underway">
+    <list default="true" id="a229bb5c-921f-4b8c-a72e-00ef0d0e3a89" name="Changes" comment="levels separations">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainApp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,30 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744203387111</updated>
-    </task>
-    <task id="LOCAL-00094" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744808335370</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1744808335370</updated>
-    </task>
-    <task id="LOCAL-00095" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744822445648</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1744822445649</updated>
-    </task>
-    <task id="LOCAL-00096" summary="setup underway">
-      <option name="closed" value="true" />
-      <created>1744822449485</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1744822449485</updated>
     </task>
     <task id="LOCAL-00097" summary="setup underway">
       <option name="closed" value="true" />
@@ -461,13 +436,38 @@
       <option name="project" value="LOCAL" />
       <updated>1745105217413</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745110024693</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1745110024695</updated>
+    </task>
+    <task id="LOCAL-00144" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745110030665</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1745110030665</updated>
+    </task>
+    <task id="LOCAL-00145" summary="levels separations">
+      <option name="closed" value="true" />
+      <created>1745110036538</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1745110036538</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="restart" />
     <MESSAGE value="start" />
     <MESSAGE value="setup underway" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup underway" />
+    <MESSAGE value="levels separations" />
+    <option name="LAST_COMMIT_MESSAGE" value="levels separations" />
   </component>
 </project>
