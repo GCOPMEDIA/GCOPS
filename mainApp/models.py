@@ -132,7 +132,6 @@ class Grade(models.Model):
     student = models.ForeignKey('Student', models.DO_NOTHING)
     subject = models.ForeignKey('Subject', models.DO_NOTHING)
 
-
     class Meta:
         managed = True
         db_table = 'grade'
@@ -141,7 +140,7 @@ class Grade(models.Model):
 class ClassName(models.Model):
     class_id = models.AutoField(primary_key=True)
     class_name = models.CharField(max_length=250)
-    teacher = models.ForeignKey(AuthUser,models.DO_NOTHING)
+    teacher = models.ForeignKey(AuthUser, models.DO_NOTHING)
 
     class Meta:
         managed = True
@@ -152,7 +151,7 @@ class Student(models.Model):
     student_id = models.AutoField(primary_key=True)
     student_f_name = models.CharField(max_length=250)
     student_l_name = models.CharField(max_length=250)
-    class_name = models.ForeignKey(ClassName,on_delete=models.DO_NOTHING)
+    class_name = models.ForeignKey(ClassName, on_delete=models.DO_NOTHING)
     conduct = models.CharField(max_length=450, blank=True, null=True)
     remarks = models.CharField(max_length=450, blank=True, null=True)
     attendance = models.CharField(max_length=250, blank=True, null=True)
@@ -167,7 +166,7 @@ class Student(models.Model):
 class Subject(models.Model):
     LEVEL_CHOICES = [
         ('nursery', 'Nursery'),
-        ('kindergarten',"Kindergarten"),
+        ('kindergarten', "Kindergarten"),
         ('primary', 'Primary'),
     ]
 
@@ -178,7 +177,6 @@ class Subject(models.Model):
     class Meta:
         managed = True
         db_table = 'subject'
-
 
 
 class Term(models.Model):
