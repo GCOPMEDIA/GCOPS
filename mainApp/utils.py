@@ -177,7 +177,7 @@ def download(student_id):
     pdf.cell(30, 8, f"{term.term_type}", ln=0)
 
     pdf.set_text_color(0, 0, 102)
-    pdf.cell(45, 8, "POSITION IN CLASS:", ln=0)
+    pdf.cell(40, 8, "POSITION IN CLASS:", ln=0)
     pdf.set_text_color(0, 204, 255)
     pdf.cell(0, 8, f"{number_to_ordinal(student.position)}", ln=1)
 
@@ -282,6 +282,8 @@ def download(student_id):
 
     pdf.ln(5)
     pdf.cell(0, 8, "HEAD TEACHER'S SIGNATURE: _______________________________", ln=True)
+    pdf.ln(5)
+    pdf.cell(0, 8, "ARREARS: GH₵_______________________________", ln=True)
     pdf.ln(10)
 
     # === GRADING SYSTEM ===
