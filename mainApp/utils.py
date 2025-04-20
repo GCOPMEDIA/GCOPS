@@ -1,5 +1,12 @@
 from fpdf import FPDF
 from .models import *
+from django.db.models import Sum
+from django.db.models import Window
+from django.db.models.functions import Rank
+from django.db.models import IntegerField
+from django.db.models import F
+from django.db.models.functions import Cast
+from mainApp.models import Grade
 def safe_text(text):
     return (text.replace("–", "-")
                 .replace("’", "'")
@@ -31,8 +38,44 @@ def download(student_id):
     float(i.total_mark) for i in grades
     if i.total_mark and i.total_mark.replace('.', '', 1).isdigit()
 )
+    class_id = className.class_id
+    ranked_students = (
+        Student.objects.filter(class_name_id=class_id)
+        .annotate(
+            total_score=Sum(Cast('grade__total_mark', output_field=IntegerField())),
+        )
+        .annotate(
+            position=Window(
+                expression=Rank(),
+                order_by=F('total_score').desc()
+            )
+        )
+        .order_by('position')
+    )
+    student = ranked_students.filter(student_id=student_id).first()
 
 
+
+
+    subject_id = 2
+
+    ranked_by_subject = (
+        Grade.objects.filter(
+            student__class_name_id=class_id,
+            subject_id=subject_id
+        )
+        .annotate(
+            numeric_score=Cast('total_mark', IntegerField())
+        )
+        .annotate(
+            position=Window(
+                expression=Rank(),
+                order_by=F('numeric_score').desc()
+            )
+        )
+        .select_related('student', 'subject')
+        .order_by('position')
+    )
 
     class PDF(FPDF):
 
@@ -89,7 +132,7 @@ def download(student_id):
     pdf.set_text_color(0, 0, 102)
     pdf.cell(48, 8, "POSITION IN CLASS:", ln=0)
     pdf.set_text_color(0, 204, 255)
-    pdf.cell(0, 8, "1st", ln=1)
+    pdf.cell(0, 8, f"{student.position}", ln=1)
 
     pdf.set_text_color(0, 0, 102)
     pdf.cell(17, 8, "CLASS:", ln=0)
