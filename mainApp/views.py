@@ -71,7 +71,14 @@ from .models import Student, Subject, Grade
 
 def add_grade(request, student_id):
     student = get_object_or_404(Student, student_id=student_id)
-    subjects = Subject.objects.all()
+    print()
+    if (student.class_name).class_id == 1 or (student.class_name).class_id ==2:
+
+        subjects = Subject.objects.filter(level="nursery")
+    elif (student.class_name).class_id ==3 or (student.class_name).class_id ==4:
+        subjects = Subject.objects.filter(level="kindergarten")
+    else:
+        subjects = Subject.objects.filter(level="primary")
 
     if request.method == "POST":
         for subject in subjects:
