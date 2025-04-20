@@ -8,6 +8,7 @@ from django.db.models import F
 from django.db.models.functions import Cast
 from mainApp.models import Grade
 def safe_text(text):
+    text=str(text)
     return (text.replace("–", "-")
                 .replace("’", "'")
                 .replace("“", '"')
