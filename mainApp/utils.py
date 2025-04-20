@@ -54,28 +54,32 @@ def download(student_id):
     )
     student = ranked_students.filter(student_id=student_id).first()
 
+    from collections import defaultdict
 
+    position_map = defaultdict(dict)
 
+    for g in grades:
+        subject_id = g.subject_id
 
-    subject_id = 2
-
-    ranked_by_subject = (
-        Grade.objects.filter(
-            student__class_name_id=class_id,
-            subject_id=subject_id
-        )
-        .annotate(
-            numeric_score=Cast('total_mark', IntegerField())
-        )
-        .annotate(
-            position=Window(
-                expression=Rank(),
-                order_by=F('numeric_score').desc()
+        rankings = (
+            Grade.objects.filter(
+                student__class_name_id=g.student.class_name_id,
+                subject_id=subject_id
             )
+            .annotate(
+                numeric_score=Cast('total_mark', IntegerField())
+            )
+            .annotate(
+                position=Window(
+                    expression=Rank(),
+                    order_by=F('numeric_score').desc()
+                )
+            )
+            .values('student_id', 'subject_id', 'position')
         )
-        .select_related('student', 'subject')
-        .order_by('position')
-    )
+
+        for rank in rankings:
+            position_map[rank['student_id']][rank['subject_id']] = rank['position']
 
     class PDF(FPDF):
 
@@ -193,12 +197,12 @@ def download(student_id):
     pdf.set_text_color(0, 0, 0)
     data = [
         (
-            grade.subject.subject_name,  # Subject name
-            grade.class_mark or "",  # Class score
-            grade.exams_mark or "",  # Exams score
-            grade.total_mark or "",  # Total
-            "",  # Position (not stored in your model)
-            grade.remarks or ""  # Remarks
+            grade.subject.subject_name,
+            grade.class_mark or "",
+            grade.exams_mark or "",
+            grade.total_mark or "",
+            position_map.get(grade.student_id, {}).get(grade.subject_id, ""),  # Position
+            grade.remarks or ""
         )
         for grade in grades
     ]
