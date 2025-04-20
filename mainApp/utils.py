@@ -137,7 +137,7 @@ def download(student_id):
             self.set_xy(0, 10)
             self.set_font("Arial", "B", 16)
             self.set_text_color(102, 0, 204)
-            self.cell(0, 8, safe_text("PEACE EDUCATION SCHOOL"), align="C", ln=True)
+            self.cell(0, 8, safe_text("PEACE EDUCATIONAL SCHOOL"), align="C", ln=True)
 
             self.set_font("Arial", "B", 12)
             self.set_text_color(0, 0, 0)
@@ -151,7 +151,7 @@ def download(student_id):
             self.ln(2)
             self.set_font("Arial", "B", 14)
             self.set_text_color(102, 0, 204)
-            self.cell(0, 8, safe_text(f"TERMINAL REPORT {className.class_name}"), ln=True, align="C")
+            self.cell(0, 8, safe_text(f"TERMINAL REPORT FOR {className.class_name}"), ln=True, align="C")
             self.ln(2)
 
         def footer(self):
@@ -177,7 +177,7 @@ def download(student_id):
     pdf.cell(30, 8, f"{term.term_type}", ln=0)
 
     pdf.set_text_color(0, 0, 102)
-    pdf.cell(48, 8, "POSITION IN CLASS:", ln=0)
+    pdf.cell(45, 8, "POSITION IN CLASS:", ln=0)
     pdf.set_text_color(0, 204, 255)
     pdf.cell(0, 8, f"{number_to_ordinal(student.position)}", ln=1)
 
@@ -202,7 +202,7 @@ def download(student_id):
 
     # === SUBJECT TABLE ===
     # Table header
-    pdf.set_font("Arial", "B", 12)
+    pdf.set_font("Arial", "B", 12,)
     pdf.set_text_color(0, 0, 0)
     pdf.set_fill_color(255, 255, 255)
 
@@ -219,7 +219,7 @@ def download(student_id):
         "POSITION\n ",
         "REMARKS\n "
     ]
-    widths = [60, 25, 25, 25, 20, 35]
+    widths = [60, 25, 25, 20, 25, 35]
 
     # Get current position
     x_start = pdf.get_x()
