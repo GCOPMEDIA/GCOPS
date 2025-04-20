@@ -14,7 +14,49 @@ def safe_text(text):
                 .replace("“", '"')
                 .replace("”", '"')
                 .replace("…", "..."))
+
 from datetime import datetime
+
+def shorten_level_name(level):
+    level = level.strip().lower()
+
+    if "kindergarten" in level or "kg" in level:
+        number = ''.join(filter(str.isdigit, level))
+        return f"KG{number}" if number else "KG"
+
+    elif "nursery" in level or "n" in level:
+        number = ''.join(filter(str.isdigit, level))
+        return f"N{number}" if number else "N"
+
+    elif "primary" in level:
+        word_to_number = {
+            "one": "1", "two": "2", "three": "3",
+            "four": "4", "five": "5", "six": "6"
+        }
+        for word, num in word_to_number.items():
+            if word in level:
+                return f"B{num}"
+        number = ''.join(filter(str.isdigit, level))
+        return f"B{number}" if number else "B"
+
+    return level.upper()
+
+def number_to_ordinal(n):
+    n = int(n)
+    if 10 <= n % 100 <= 20:
+        suffix = 'th'
+    else:
+        last_digit = n % 10
+        if last_digit == 1:
+            suffix = 'st'
+        elif last_digit == 2:
+            suffix = 'nd'
+        elif last_digit == 3:
+            suffix = 'rd'
+        else:
+            suffix = 'th'
+    return f"{n}{suffix}"
+
 
 def get_date_in_words(date_obj):
     day = date_obj.day
@@ -137,12 +179,12 @@ def download(student_id):
     pdf.set_text_color(0, 0, 102)
     pdf.cell(48, 8, "POSITION IN CLASS:", ln=0)
     pdf.set_text_color(0, 204, 255)
-    pdf.cell(0, 8, f"{student.position}", ln=1)
+    pdf.cell(0, 8, f"{number_to_ordinal(student.position)}", ln=1)
 
     pdf.set_text_color(0, 0, 102)
     pdf.cell(17, 8, "CLASS:", ln=0)
     pdf.set_text_color(0, 204, 255)
-    pdf.cell(25, 8, f"{className.class_name}", ln=0)
+    pdf.cell(25, 8, f"{shorten_level_name(className.class_name)}", ln=0)
 
     pdf.set_text_color(0, 0, 102)
     pdf.cell(25, 8, "VACATION:", ln=0)
@@ -174,7 +216,7 @@ def download(student_id):
         "CLASS\nSCORE",
         "EXAMS\nSCORE",
         "TOTAL\n ",
-        "GRADE\n ",
+        "POSITION\n ",
         "REMARKS\n "
     ]
     widths = [60, 25, 25, 25, 20, 35]
@@ -202,7 +244,7 @@ def download(student_id):
             grade.class_mark or "",
             grade.exams_mark or "",
             grade.total_mark or "",
-            position_map.get(grade.student_id, {}).get(grade.subject_id, ""),  # Position
+            number_to_ordinal(position_map.get(grade.student_id, {}).get(grade.subject_id, "")),  # Position
             grade.remarks or ""
         )
         for grade in grades
